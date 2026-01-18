@@ -1,3 +1,5 @@
+
+// URL LINK:https://github.com/Jennireyes1010/cs81-module4b-mydataexplorer.git
 const weekData = [
     { day: 'Monday', sleepHours: 8, screenTime: 7, mood: 'relaxed', caffoeineIntake: 1, focusLevel: 8 },
     { day: 'Tuesday', sleepHours: 6, screenTime: 9, mood: 'stressed', caffoeineIntake: 3, focusLevel: 5 },
