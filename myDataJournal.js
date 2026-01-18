@@ -30,6 +30,7 @@ const weekData = [
         }
         return totalSleep / weekData.length;
     }
+//Purpose: Determines the most frequent mood recorded during the week.
     function mostFrequentMood() {
         const moodCount = {};
 
@@ -37,7 +38,6 @@ const weekData = [
           const mood = weekData[i].mood;
            moodCount[mood] = (moodCount[mood] || 0) + 1;
   }
-
          let mostFrequent = null;
          let maxCount = 0;
 
@@ -47,16 +47,15 @@ const weekData = [
               maxCount = moodCount[mood];
     }
   }
-
-  return mostFrequent;
+        return mostFrequent;
 }
-
+//Purpose: Correlates caffeine intake with focus levels throughout the week.
     function correlateCaffeineToFocus() {
-        for (let i = 0; i < weekData.length; i++) {
-            console.log(
-                weekData[i].day + ': Caffeine Intake = ' +
-                weekData[i].caffoeineIntake +
-                ', Focus Level = ' + weekData[i].focusLevel
-            );
-        }
-    }
+         for (let i = 0; i < weekData.length; i++) {
+         console.log(
+         weekData[i].day + ': Caffeine Intake = ' +
+         weekData[i].caffeineIntake +
+         ', Focus Level = ' + weekData[i].focusLevel
+    );
+  }
+}
